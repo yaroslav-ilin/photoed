@@ -1,0 +1,22 @@
+{
+  "name": "photoed",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yaroslav Ilin <nilfalse@yandex.com>",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.6",
+    "mongoose": "^4.6.7",
+    "multer": "^1.2.0",
+    "requirejs": "^2.3.2"
+  }
+}
