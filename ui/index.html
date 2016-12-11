@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Photo Ed</title>
+<link rel="stylesheet" href="/ui/main.css" />
+
+<div class="application">
+<div class="controllers">
+    <div class="controllers__home controller hidden" id="controllers__home">
+        <div class="application__header">
+            <h1 class="application__title">Photo Ed</h1>
+            <div class="application__share share"><a class="share__link" target="_blank"></a></div>
+        </div>
+        <div class="application__content">
+            <div class="application__toolbar toolbar hidden">
+                <ul class="toolbar__presets"></ul>
+                <div class="toolbar__paranja"><p>loading ...</p></div>
+            </div>
+            <div class="application__fileupload imageupload">
+                <input type="file" class="imageupload__input hidden" accept="image/jpeg, image/png, image/gif" />
+                <p class="imageupload__hint">click here to upload new image file</p>
+                <div class="imageupload__preview"></div>
+            </div>
+        </div>
+    </div>
+    <div class="controllers__watch controller hidden" id="controllers__watch">
+        <div class="application__header">
+            <h1 class="application__title">Photo Ed</h1>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="/ui/glfx.js"></script>
+<script src="/vendor/requirejs/require.js"></script>
+<script>
+requirejs.config({
+    baseUrl: '/ui',
+    paths: {
+        underscore: '/vendor/lodash/lodash.min',
+        jquery: '/vendor/jquery/dist/jquery.min',
+        backbone: '/vendor/backbone/backbone-min'
+    }
+});
+</script>
+<script type="text/template" id="toolbar-preset-item">
+<figure class="preset-preview">
+    <figcaption class="preset-preview__title"><%= name %></figcaption>
+</figure>
+</script>
+<script src="/ui/init.js"></script>

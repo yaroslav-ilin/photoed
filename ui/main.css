@@ -1,0 +1,118 @@
+body {
+    font-family: Arial,sans-serif;
+}
+.hidden {
+    display: none !important;
+}
+.controllers__watch img {
+    width: 100%;
+}
+
+.application {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.application__content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+/*.application__toolbar {
+    display: flex;
+}
+.application__fileupload {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}*/
+
+.application__header > * {
+    display: inline-block;
+}
+.application__header .application__title {
+    margin: 0 0 16px;
+}
+.application__header .application__share {
+    margin: 10px 0 0;
+}
+
+.share {
+    float: right;
+}
+.share__link {
+    padding-right: 20px;
+    text-decoration: none;
+    background: url('/ui/assets/open_in_new_window.png') center right no-repeat;
+    color: black;
+}
+
+.toolbar {
+    box-sizing: border-box;
+    position: relative;
+}
+.toolbar_loading_yes {
+    min-height: 32px;
+}
+.toolbar_loading_yes .toolbar__paranja {
+    display: block;
+}
+.toolbar__paranja {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.9);
+}
+.toolbar__paranja p {
+    text-align: center;
+}
+.toolbar__presets li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 2px;
+}
+.toolbar__presets .preset-preview {
+    position: relative;
+    margin: 0;
+}
+.toolbar__presets .preset-preview__title {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #eee;
+    text-shadow: #111 -2px -2px 2px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 14px
+}
+.toolbar__presets img {
+    max-height: 128px;
+}
+
+.imageupload {
+    min-width: 600px;
+    min-height: 48px;
+    border: 2px dashed rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.imageupload:hover {
+    border-color: black;
+}
+.imageupload__input {
+    display: none;
+}
+.imageupload__preview {
+    text-align: center;
+}
+.imageupload__preview img {
+    max-width: 100%;
+}
+.imageupload__hint {
+    color: rgba(0,0,0,.2);
+    text-align: center;
+}
+.imageupload:hover .imageupload__hint {
+    color: black;
+}
